@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap</title>
+
+<!--    <script src="../bootstrap-5.1.2-dist/bootstrap-5.1.2-dist/js/jquery-3.6.0.js"></script>-->
+<!--    <script src="../bootstrap-5.1.2-dist/bootstrap-5.1.2-dist/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
+
+
+
+<!--    <link rel="stylesheet" href="../bootstrap-5.1.2-dist/bootstrap-5.1.2-dist/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="../bootstrap-5.1.2-dist/bootstrap-5.1.2-dist/css/bootstrap-theme.min.css">-->
+</head>
+<body>
+<!--
+    사이즈는 lg-md-sm-xs.html 파일에 들어있다.
+
+
+    offset
+    - 지정된 블록만 간격을 두고 배치하기 위한 것이다.
+    - col-종류-offset-숫자 형태로 작성한다.
+    예를 들어, md 사이즈의 1블록 사이를 비우고 3블록 영역의 콘텐츠를 배치한다.
+    class="col-md-offset-1 col-md-3"
+
+    visible
+    - 지정된 디바이스의 크기인 경우에만 콘텐츠를 표시한다.
+    - visible-종류-block 형태로 작성한다.
+    예를 들어, md(992 ~ 1200px)로 설정된 태그에만 표시되고, 그 이외에는 표시되지 않는다.
+    class="visible-md-block"
+-->
+    <div class="container">
+        <h1>그리드 시스템</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-12"
+                     style="border: 1px solid white; background-color: #eee">
+                    <p>MENU</p>
+                </div>
+
+                <div class="col-lg-9 col-lg-offset-1 col-md-7 col-sm-offset-1 col-sm-6 col-sm-offset-1 col-xs-12"
+                    style="border: 1px solid white; background-color: #eee;">
+                    <p>Content.</p><p>Content.</p><p>Content.</p>
+                </div>
+
+                <div class="visible-lg-block visible-md-block visible-sm-block">
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12"
+                        style="border: 1px solid white; background-color: #dfd;">
+                        <p>default option</p>
+                    </div>
+                </div>
+
+                <div class="visible-xs-block">
+                    <div class="col-xs-12"
+                            style="border: 1px solid white; background-color: #fdd;">
+                        <p>small option</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

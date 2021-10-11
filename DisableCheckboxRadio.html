@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Disable</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cerulean/bootstrap.min.css" integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+</head>
+<body>
+<!-- 체크박스나 라디오 버튼을 사용할 수 없게 하려면, 해당 태그에 "disabled:를 지정하면 된다.-->
+<div class="container">
+    <div class="row">
+        <div class="page-header">
+            <h1>컨텐츠 표시</h1>
+            <h2>form</h2>
+        </div>
+        <form>
+            <div class="checkbox">
+                <label for="cb1">
+                    <input type="checkbox" id="cb1">
+                    Check Box
+                </label>
+            </div>
+
+            <div class="checkbox disabled">
+                <label for="cb2">
+                    <input type="checkbox" id="cb2" disabled>
+                    CheckBox
+                </label>
+            </div>
+
+            <div class="radio">
+                <label for="rb1">
+                    <input type="radio" id="rb1" name="rb">
+                    Radio Button No, 1.
+                </label>
+            </div>
+            <div class="radio">
+                <label for="rb2">
+                    <input type="radio" id="rb2" name="rb">
+                    Radio Button No, 2.
+                </label>
+            </div>
+            <div class="radio">
+                <label for="rb3">
+                    <input type="radio" id="rb3" name="rb">
+                    Radio Button No, 3.
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="button" class="btn" value="Click">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>

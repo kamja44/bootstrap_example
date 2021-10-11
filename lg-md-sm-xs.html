@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap</title>
+
+    <script src="../bootstrap-5.1.2-dist/bootstrap-5.1.2-dist/js/jquery-3.6.0.js"></script>
+    <script src="../bootstrap-5.1.2-dist/bootstrap-5.1.2-dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../bootstrap-5.1.2-dist/bootstrap-5.1.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.1.2-dist/bootstrap-5.1.2-dist/css/bootstrap-theme.min.css">
+</head>
+<body>
+<!--
+    lg | 1200px 이상 | 주로 PC or 태블릿
+    md | 992 ~ 1200px | 주로 태블릿
+    sm | 768 ~ 992px | 주로 태블릿
+    xs | 768px 미만 | 주로 스마트폰
+
+    row는 폭 전체를 12개의 블록으로 나누어 관리한다.
+    이 마지막 숫자는 그 콘텐츠의 블록 비중이 얼마인지 보여준다.
+
+    예를 들어 2개의 콘텐츠를 가로로 정렬하면 6대6으로 반씩이 된다.
+    4대8로 하면 1:2 비율의 콘텐츠가 표시된다.
+
+    합계가 12 이상이 되면 컨텐츠는 다음 행으로 줄바꿈되어 표시된다.
+-->
+
+<!-- 768~992px(sm)크기에서 4:8로 표시되는 경우 -->
+<div class="container">
+    <h1>그리드 시스템</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4" style="border:1px solid white; background-color: #eee">
+                <p>MENU</p>
+            </div>
+            <div class="col-sm-8" style="border: 1px solid white; background-color: #eee">
+                <p>Content.</p><p>Content.</p><p>Content.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
