@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
+    <title>Alert</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-header">
+                <h1>경로, 다이어로그</h1>
+                <h2>다이어로그</h2>
+            </div>
+            <!-- a태그를 이용하여 alert를 연다. -->
+            <a href="#dialog" role="button" class="btn btn-default" data-toggle="modal">Show Dialog</a>
+
+            <div class="modal fade" id="dialog" role="dialog" aria-labelledby="dlogLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="dlogLabel">
+                                Dialog!
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            dialog message
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" role="button" class="btn btn-default" data-dismiss="modal">Close</a>
+                            <!-- a태그를 이용하여 alert를 닫는다. -->
+                            <!-- data-dismiss="modal"을 이용하면 modal외 화면을 눌렀을 떄 modal을 자동으로 닫을 수 있다. -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
