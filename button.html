@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Button</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cerulean/bootstrap.min.css" integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+</head>
+<body>
+<!--
+    BootStrap은 btn-default 대신에 넣을 수 있는 값으로 총 7가지의 버튼 모양을 제공한다.
+    1. btn-default
+    2. btn-primary
+    3. btn-success
+    4. btn-info
+    5. btn-warning
+    6. btn-danger
+    7. btn-link
+
+    버튼의 크기 정하기
+    btn-lg => 큰 버튼
+    btn-sx => 더 작은 버튼
+    btn-sm => 작은 버튼
+
+    상태 -> 버튼의 활성화 비활성화 상태를 나타낸다.
+    active -> 활성화 상태 -> 버튼을 처음부터 누른 상태에서 표시 할 경우 사용한다.
+    disabled -> 비활성 상태 -> 버튼을 사용할 수 없는 상태로 표시한다. 즉, 클릭이 되지 않는다.
+-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Button</h1>
+            <p>
+                <a href="#" class="btn btn-default">a</a>
+                <button class="btn btn-default">button</button>
+                <input type="submit" value="input" class="btn btn-default">
+                <span class="btn btn-default">span</span>
+            </p>
+            <h1>Color</h1>
+            <p>
+                <button class="btn btn-default">default</button>
+                <button class="btn btn-primary">primary</button>
+                <button class="btn btn-success">success</button>
+                <button class="btn btn-info">info</button>
+                <button class="btn btn-warning">warning</button>
+                <button class="btn btn-danger">danger</button>
+                <button class="btn btn-link">link</button>
+            </p>
+            <h1>size</h1>
+            <p>
+                <button class="btn btn-default btn-sm">btn-sm</button>
+                <button class="btn btn-default btn-xs">btn-xs</button>
+                <button class="btn btn-default btn-lg">btn-lg</button>
+            </p>
+            <p>
+                <button class="btn btn-default btn-block">btn-block</button>
+            </p>
+            <p>
+                <button class="btn btn-default btn-lg btn-block">btn-lg btn-block</button>
+            </p>
+            <h1>state</h1>
+            <p>
+                <button class="btn btn-primary active">button-active</button>
+                <button class="btn btn-primary" active="active">button-active</button>
+                <a href="#" class="btn btn-danger active">a-active</a>
+                <button class="btn btn-primary disabled">button-disabled</button>
+                <button class="btn btn-primary" disabled="disabled">button-disabled</button>
+                <a href="#" class="btn btn-danger disabled">a-disabled</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>
