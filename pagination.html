@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<!--
+    - active And disabled
+    active -> 현재 열려있는 페이지를 보여준다.
+    disabled -> 사용 불가 상태를 나타낸다.
+-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="page-header">
+                <h1>컨텐츠 표시</h1>
+                <h2>Pagination</h2>
+            </div>
+
+            <h3>Page 1</h3>
+            <p>이것은 1페이지의 내용입니다.</p>
+        <div style="text-align: center"> <!-- 가운데 정렬 -->
+            <ul class="pagination">
+                <li class="disabled">
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true"><<</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">2</a>
+                </li>
+                <li class="active">
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">>></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
